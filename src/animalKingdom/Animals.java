@@ -15,7 +15,20 @@ abstract class Animals{
         this.name = name;
         this.yearNamed = yearNamed;
     }
+    public String getName(){
+        return name;
+    }
+    public int getYear(){
+        return yearNamed;
+    }
+    public int getId(){
+        return id;
+    }
     abstract String move();
     abstract String breathe();
     abstract String reproduce();
+   
+    public String toString(){
+        return name +" "+ reproduce() +" "+ move() +" "+ breathe() +" "+ yearNamed;
+    }
 }
